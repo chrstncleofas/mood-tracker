@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
+# Mood Tracker
+
+This is a [Next.js](https://nextjs.org) project for tracking moods, where users can log their mood with an optional note, and see a timeline of their entries. The project was bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app) and styled using [Tailwind CSS](https://tailwindcss.com/).
+
+## Features
+
+- Select mood from predefined options: Happy, Sad, Angry, Excited, Calm/Neutral, Anxious
+- Add an optional note for each mood entry
+- View a timeline of all mood entries, including date and note
+- Simple, clean UI built with React and Next.js
 
 ## Getting Started
 
-First, run the development server:
+To get started, follow these steps:
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/chrstncleofas/mood-tracker.git
+cd mood-tracker
+```
+
+### 2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,31 +39,42 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### 4. Edit and Customize:
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## How It Works
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- **MoodForm**: Allows the user to select a mood and add an optional note. The form uses React state and validates that a mood is selected before submitting.
+- **Timeline**: Displays all moods added, showing the mood, date, and note.
+- **Header**: Displays the app's title dynamically.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app also uses **Tailwind CSS** for styling, providing a responsive and modern design.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, check out the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can also check out [the Next.js GitHub repository](https://github.com/vercel/next.js) for feedback and contributions.
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+---
+
+### Tailwind CSS Configuration
+
+This project is styled with [Tailwind CSS](https://tailwindcss.com/). For customizations, you can edit the `tailwind.config.ts` file.
+
+---
+
+Enjoy your Mood Tracker app! 😊
