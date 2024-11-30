@@ -1,4 +1,3 @@
-// components/Select.tsx
 interface SelectProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;

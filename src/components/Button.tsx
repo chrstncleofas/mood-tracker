@@ -1,4 +1,3 @@
-// components/Button.tsx
 export default function Button({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <button

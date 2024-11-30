@@ -1,4 +1,3 @@
-// components/Header.tsx
 interface HeaderProps {
   title: string;
 }
